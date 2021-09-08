@@ -44,7 +44,7 @@ public class Square extends Rectangle {
 
     @Override
     public double getPerimeter() {
-        return width*length;
+        return 2*(width*length);
     }
 
     @Override
