@@ -17,7 +17,7 @@ public class ArrayWithLoop {
             int common = 0;
             int[] array = new int[n];
 
-            System.out.println("Введите числа массива. Прибавьте '0' для выхода: ");
+            System.out.println("Enter the numbers in the array. Add '0' to exit: ");
             for (int i = 0; i < array.length; i++) {
                 do {
                     array[i] = in.nextInt();
@@ -31,11 +31,11 @@ public class ArrayWithLoop {
 
             for (int j : array) common = common + j;
 
-            System.out.println("Сумма = " + common);
+            System.out.println("Sum = " + common);
             if(!flag){
                 break;
             }
         }
-        System.out.println("Программа закончена!");
+        System.out.println("The programm is over!");
     }
 }
