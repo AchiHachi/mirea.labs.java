@@ -49,6 +49,24 @@ public class Solution {
 
     }
 
+    public static int task5(int N){
+        if (N < 10) {
+            return N;
+        }
+        else {
+            return N % 10 + task5(N / 10);
+        }
+    }
+
+    public static int task15(int n) {
+        if (n < 10)
+            return n;
+        else {
+            System.out.print(n % 10 + " ");
+            return task15(n / 10);
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Треугольная последовательность:");
         System.out.println(task1(13));
@@ -65,6 +83,13 @@ public class Solution {
         System.out.println("От B до A:");
         System.out.println(task3(10, 5));
         System.out.println();
+
+        System.out.println("Сумма цифр числа: ");
+        System.out.println(task5(135));
+        System.out.println();
+
+        System.out.println("Цифры числа справа налево: ");
+        System.out.println(task15(24374));
+        System.out.println();
     }
 }
-
